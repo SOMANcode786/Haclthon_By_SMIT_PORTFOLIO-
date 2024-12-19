@@ -1,0 +1,236 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Home Page */
+body {
+  background-color: rgb(12, 12, 39);
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 80px;
+  background-color: rgb(21, 21, 73);
+  padding: 0 20px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav li {
+  list-style: none;
+  margin: 0 16px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+nav ul li a:hover {
+  color: rgb(76, 68, 114);
+  font-size: 1.02rem;
+}
+
+/* First Section */
+.firstsection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 50px 20px;
+}
+
+.firstsection > div {
+  width: 45%;
+  text-align: center;
+}
+
+.purple {
+  color: blueviolet;
+}
+
+.leftdiv {
+  font-size: 2.5rem;
+}
+
+.rightdiv img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 50%;
+}
+
+#element {
+  color: blueviolet;
+}
+
+/* Footer */
+footer {
+  background-color: rgb(14, 13, 13);
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+  bottom: 0%;
+  position: fixed;
+  width: 100vw;
+}
+
+footer .first {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+}
+
+footer .first ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 20px;
+  padding: 0;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-size: 17px;
+
+}
+
+footer .first ul li {
+  cursor: pointer;
+
+
+}
+footer .first ul li a{
+ text-decoration: none;
+ color: white;
+
+
+}
+footer .first ul li a:hover {
+  color: rgb(76, 68, 114);
+}
+
+
+/* About Page */
+.skills-section {
+  padding: 0 20px;
+  margin-top: 20%;
+}
+
+.skills-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.skills-section .text {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.skills-section .cells {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.skills-section .cells .cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 150px;
+  padding: 10px;
+  margin: 15px;
+  border: 1.5px solid #d3d3d3;
+  border-radius: 5px;
+}
+
+.skills-section .cells .cell img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  border-radius: 2px;
+}
+
+.skills-section .cells .cell span {
+  font-size: 16px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  /* Navbar */
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  /* First Section */
+  .firstsection {
+    flex-direction: column;
+  }
+
+  .firstsection > div {
+    width: 90%;
+    margin: 10px 0;
+  }
+
+  .leftdiv {
+    font-size: 2rem;
+  }
+
+  /* About Page */
+  .skills-section h2 {
+    font-size: 2rem;
+  }
+
+  .skills-section .cells .cell {
+    width: 100px;
+    margin: 10px;
+  }
+
+  .skills-section .cells .cell span {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Navbar */
+  nav ul li a {
+    font-size: 0.9rem;
+  }
+
+  /* First Section */
+  .leftdiv {
+    font-size: 1.8rem;
+  }
+
+  /* Footer */
+  footer .first ul li {
+    font-size: 0.9rem;
+  }
+
+  /* About Page */
+  .skills-section h2 {
+    font-size: 1.8rem;
+  }
+
+  .skills-section .cells .cell {
+    width: 80px;
+    margin: 8px;
+  }
+
+  .skills-section .cells .cell span {
+    font-size: 12px;
+  }
+}
